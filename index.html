@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <script src="js/app.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+
+</head>
+<body>
+    <div align="center">
+        <h1 class="heading">Calculator</h1>
+    </div>
+   <div class="maindivv">
+     <div>
+        <input type="text" id="input" style="width:105%; text-align: right;font-size: 24px;color:lightgrey;background-color: black;border: none;" class="form-control">
+         <input type="text" id="output"  placeholder="0" style="width:105%; text-align: right;font-size: 36px;color:white;background-color: black;border: none;" class="form-control">
+     </div>  
+     <div>
+        <button class="circle btn" onclick="clearfield()">C</button>
+        <button class="circle btn" onclick="check()" >+/-</button>
+        <button class="circle btn" onclick="check()">%</button>
+        <button class="sign btn" onclick="getValue('/')">/</button>
+    </div>
+    <div>
+        <button class="circle btn" onclick="getValue('7')">7</button>
+        <button class="circle btn" onclick="getValue('8')">8</button>
+        <button class="circle btn" onclick="getValue('9')">9</button>
+        <button class="sign btn" onclick="getValue('*')">x</button>
+    </div>
+    <div>
+        <button class="circle btn" onclick="getValue('4')">4</button>
+        <button class="circle btn" onclick="getValue('5')">5</button>
+        <button class="circle btn" onclick="getValue('6')">6</button>
+        <button class="sign btn" onclick="getValue('-')">-</button>
+    </div>
+    <div>
+        <button class="circle btn" onclick="getValue('1')">1</button>
+        <button class="circle btn" onclick="getValue('2')">2</button>
+        <button class="circle btn" onclick="getValue('3')">3</button>
+        <button class="sign btn" onclick="getValue('+')">+</button>
+    </div>
+    <div>
+        <button class="zero btn" onclick="getValue('0')">0</button>
+        <button class="circle btn" onclick="check()">.</button>
+        <button class="sign btn" onclick="getOutput()">=</button>
+    </div>
+   </div>
+   </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
